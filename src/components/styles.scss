@@ -1,0 +1,275 @@
+// Listing.scss
+.listing {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #f5f5f5;
+      border-top: 1px solid #ccc;
+      border-radius: 0 0 5px 5px;
+
+      .location {
+        font-weight: bold;
+      }
+
+      .price {
+        color: #333;
+      }
+    }
+  }
+}
+
+.profile {
+  text-align: center;
+
+  h1 {
+    margin-top: 20px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: white;
+
+    .card-content {
+      display: flex;
+      justify-content: space-between;
+
+      .card-section {
+        h3 {
+          color: blue;
+        }
+
+        p {
+          color: grey;
+        }
+      }
+
+      .divider {
+        width: 1px;
+        background-color: grey;
+        height: auto;
+      }
+    }
+
+    button {
+      align-self: center;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  }
+}
+
+.listing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+/* styles.scss */
+.listing-detail {
+
+  .envelope {
+    color: cadetblue
+  }
+
+  .whatsapp {
+    color: #25D366;
+  }
+
+  .chat {
+    color: #00AFF0;
+  }
+
+  .amenities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .floating-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    svg {
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .image-container {
+    position: relative;
+    margin: 0;
+    /* Add this line */
+    padding: 0;
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      /* Add this line */
+      padding: 0;
+    }
+
+    .features {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      display: flex;
+      gap: 10px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      border-radius: 5px;
+
+      .feature {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+
+  .info-section {
+    display: flex;
+    flex-direction: column;
+
+    .title-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .title {
+        font-size: 24px;
+        color: #333;
+        text-align: left;
+      }
+
+      .price {
+        font-size: 24px;
+        color: navy;
+        font-weight: bold;
+      }
+    }
+
+    .location-permonth {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: grey;
+      margin-top: -10%;
+
+      .location {
+        font-size: 16px;
+      }
+
+      .permonth {
+        font-size: 16px;
+      }
+    }
+
+    .description-container {
+      position: relative;
+
+      .description {
+        color: grey;
+        font-size: 16px;
+        line-height: 1.3;
+        text-align: left;
+        color: #333;
+      }
+
+      .read-more {
+        display: inline;
+        color: #00AFF0;
+        font-weight: 500;
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        text-decoration: none;
+
+        &.expanded {
+          display: block;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.amenity-title {
+  text-align: left;
+}
+
+.featured-listing-container {
+  margin-top: -5%;
+}
+
+.featured-text {
+  text-align: left;
+  font-weight: 400;
+}
+
+.add-property {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  h2 {
+    font-weight: 400;
+    font-size: medium;
+    margin-right: 10px;
+    width: 50%;
+  }
+
+  .add-property-button {
+    background-color: royalblue;
+    width: 50%;
+    color: white;
+    border: none;
+    display: inline-block;
+    margin-bottom: 10%;
+  }
+}
+
+.add-prop-text {
+  text-align: left;
+  font-weight: 300;
+}

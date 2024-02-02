@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #f9f9ff;
+  padding: 10px 0px;
+  height: 5vh;
+  margin-top: -15%;
+  margin-bottom: 10%;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .menu-icon,
+  .logo,
+  .profile-icon {
+    color: royalblue;
+  }
+
+  .logo {
+    height: 0px;
+  }
+
+  .dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .dropdown-menu a {
+    color: black;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: black; // Change the color of the icon
+  }
+}

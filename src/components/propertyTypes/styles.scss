@@ -1,0 +1,36 @@
+.property-type-buttons {
+  display: flex;
+  overflow-x: auto;
+  gap: 3px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+   margin-top: -6%;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.property-type-button {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #333;
+  font-size: small;
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+
+  &:hover {
+    background-color: #e9ecef;
+  }
+}
+
+.property-type-button.selected {
+  background-color: #4169E1;
+  color: white;
+}

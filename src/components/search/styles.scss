@@ -1,0 +1,45 @@
+.search-container {
+  position: relative;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.search-box input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.search-box .search-icon,
+.search-box .filter-icon {
+  color: grey;
+  margin-left: 10px;
+}
+
+.suggestions {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+}
+
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions div:hover {
+  background-color: #f0f0f0;
+}

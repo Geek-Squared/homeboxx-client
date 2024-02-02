@@ -1,0 +1,38 @@
+.features {
+  h2 {
+    text-align: left;
+  }
+  .feature-list {
+    display: flex;
+    overflow-x: scroll; // Enable scrolling
+    scrollbar-width: none; // Hide scrollbar for Firefox
+    -ms-overflow-style: none; // Hide scrollbar for IE and Edge
+    gap: 20px;
+    padding: 3px 0;
+
+    &::-webkit-scrollbar {
+      display: none; // Hide scrollbar for Chrome, Safari and Opera
+    }
+      
+    .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+      height: 50px;
+
+      svg {
+        font-size: 24px;
+      }
+
+      p {
+        margin: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+}

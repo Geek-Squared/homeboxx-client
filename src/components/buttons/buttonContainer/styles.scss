@@ -1,0 +1,21 @@
+.button-container {
+    .button {
+      width: 45%;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 12%;
+      margin-left: 3%;
+  
+      &.back-button {
+        border: 1px solid blue;
+        background-color: white;
+        color: blue;
+      }
+  
+      &:not(.back-button) {
+        background-color: blue;
+        color: white;
+      }
+    }
+  }
